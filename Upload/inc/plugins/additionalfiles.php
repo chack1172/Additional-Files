@@ -39,7 +39,7 @@ EOT;
         'website'       => $lang->additional_files_url,
         'author'        => 'chack1172',
         'authorsite'    => $lang->additional_files_chack1172,
-        'version'       => '1.0',
+        'version'       => '1.1',
         'compatibility' => '18*',
         'codename'      => 'additionalfiles',
     ];

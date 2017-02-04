@@ -33,7 +33,7 @@ if (!$mybb->input['action']) {
         
         $page->output_header($lang->additional_files.' - '.$lang->checking);
         
-        $file = explode("\n", fetch_remote_file('https://mybb.com/checksums/release_mybb_{$mybb->version_code}.txt'));
+        $file = explode("\n", fetch_remote_file("https://mybb.com/checksums/release_mybb_{$mybb->version_code}.txt"));
         
 		if (strstr($file[0], '<?xml') !== false || empty($file[0])) {
 			$page->output_inline_error($lang->error_communication);
